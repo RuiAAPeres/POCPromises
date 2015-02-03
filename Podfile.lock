@@ -1,0 +1,10 @@
+PODS:
+  - JustPromises (1.0.0)
+
+DEPENDENCIES:
+  - JustPromises
+
+SPEC CHECKSUMS:
+  JustPromises: 6bd9b1ef79773ccf9f7be9eaefd81163e6e5709f
+
+COCOAPODS: 0.35.0
