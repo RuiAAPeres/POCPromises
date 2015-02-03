@@ -9,23 +9,7 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "POCPromises/FlowMapper/FuturesFlowManager.m"
-            timestampString = "444696121.403562"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "+flow1"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "POCPromises/FlowMapper/FlowMapper.m"
+            filePath = "POCPromises/FlowMapper/ViewControllerFutureFactory+Mapper.m"
             timestampString = "444695731.739361"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -41,7 +25,7 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "POCPromises/FlowMapper/FlowMapper.m"
+            filePath = "POCPromises/FlowMapper/ViewControllerFutureFactory+Mapper.m"
             timestampString = "444695736.959624"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"

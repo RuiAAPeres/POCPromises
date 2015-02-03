@@ -6,7 +6,10 @@
 //  Copyright (c) 2015 Rui Peres. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+
+@protocol FutureContructor;
 
 typedef NS_ENUM(NSUInteger, ViewControllerMapping)
 {
@@ -14,8 +17,8 @@ typedef NS_ENUM(NSUInteger, ViewControllerMapping)
     ViewControllerForStuffThatIsAwesomeMapping
 };
 
-@interface ViewControllerFlowManager : NSObject
+@interface ViewControllerFutureFactory : NSObject
 
-+ (Class)viewControllerFromMapping:(ViewControllerMapping)mapping;
++ (UIViewController<FutureContructor> *)viewControllerFromMapping:(ViewControllerMapping)mapping;
 
 @end

@@ -1,5 +1,5 @@
 //
-//  FlowManager.h
+//  FutureConstructor.h
 //  POCPromises
 //
 //  Created by Rui Peres on 03/02/2015.
@@ -10,12 +10,8 @@
 
 @class JEFuture;
 
-@interface FuturesFlowManager : NSObject
+@protocol FutureContructor <NSObject>
 
-+ (JEFuture *)flow1;
-+ (JEFuture *)flow2;
-+ (JEFuture *)flow3;
-
-+ (void)bootstrap;
+- (instancetype)initWithFuture:(JEFuture *)future;
 
 @end

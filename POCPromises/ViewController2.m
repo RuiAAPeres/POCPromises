@@ -7,7 +7,8 @@
 //
 
 #import "ViewController2.h"
-#import "FlowMapper.h"
+#import "FutureConstructor.h"
+#import "JEFuture.h"
 
 @interface ViewController2 ()<FutureContructor>
 
@@ -20,10 +21,10 @@
 {
     if (self = [super init])
     {
-//        [future continueWithTask:^JEFuture *(JEFuture *fut) {
-//            
-//            return nil;
-//        }];
+        [future continueWithTask:^JEFuture *(JEFuture *fut) {
+            
+            return nil;
+        }];
     }
     
     return self;

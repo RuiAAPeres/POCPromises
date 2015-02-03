@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
-#import "FuturesFlowManager.h"
 
 @interface AppDelegate ()
 
@@ -19,8 +18,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-    [FuturesFlowManager bootstrap];
     
     return YES;
 }

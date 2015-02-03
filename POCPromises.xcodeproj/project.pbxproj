@@ -13,12 +13,12 @@
 		B28DEBCF1A81470C00E6CBE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B28DEBCE1A81470C00E6CBE5 /* ViewController.m */; };
 		B28DEBD41A81470C00E6CBE5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B28DEBD31A81470C00E6CBE5 /* Images.xcassets */; };
 		B28DEBE31A81470C00E6CBE5 /* POCPromisesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B28DEBE21A81470C00E6CBE5 /* POCPromisesTests.m */; };
-		C771F8B01A816E8500DEEA9A /* FlowMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C771F8AF1A816E8500DEEA9A /* FlowMapper.m */; };
+		C771F8B01A816E8500DEEA9A /* ViewControllerFutureFactory+Mapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C771F8AF1A816E8500DEEA9A /* ViewControllerFutureFactory+Mapper.m */; };
 		C771F8B41A816F2D00DEEA9A /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C771F8B31A816F2D00DEEA9A /* ViewController.xib */; };
 		C771F8B61A816FDB00DEEA9A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C771F8B51A816FDB00DEEA9A /* MainStoryboard.storyboard */; };
-		C77BC3EA1A817187004CB0A2 /* FuturesFlowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C77BC3E91A817187004CB0A2 /* FuturesFlowManager.m */; };
+		C77BC3EA1A817187004CB0A2 /* ViewControllerFutureFactory+FutureCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = C77BC3E91A817187004CB0A2 /* ViewControllerFutureFactory+FutureCreator.m */; };
 		C77BC3ED1A81853B004CB0A2 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = C77BC3EC1A81853B004CB0A2 /* ViewController2.m */; };
-		C77BC3F01A8186E1004CB0A2 /* ViewControllerFlowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C77BC3EF1A8186E1004CB0A2 /* ViewControllerFlowManager.m */; };
+		C77BC3F01A8186E1004CB0A2 /* ViewControllerFutureFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C77BC3EF1A8186E1004CB0A2 /* ViewControllerFutureFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,16 +45,17 @@
 		B28DEBDC1A81470C00E6CBE5 /* POCPromisesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = POCPromisesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28DEBE11A81470C00E6CBE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B28DEBE21A81470C00E6CBE5 /* POCPromisesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POCPromisesTests.m; sourceTree = "<group>"; };
-		C771F8AE1A816E8500DEEA9A /* FlowMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowMapper.h; sourceTree = "<group>"; };
-		C771F8AF1A816E8500DEEA9A /* FlowMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowMapper.m; sourceTree = "<group>"; };
+		C771F8AE1A816E8500DEEA9A /* ViewControllerFutureFactory+Mapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewControllerFutureFactory+Mapper.h"; sourceTree = "<group>"; };
+		C771F8AF1A816E8500DEEA9A /* ViewControllerFutureFactory+Mapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewControllerFutureFactory+Mapper.m"; sourceTree = "<group>"; };
 		C771F8B31A816F2D00DEEA9A /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		C771F8B51A816FDB00DEEA9A /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
-		C77BC3E81A817187004CB0A2 /* FuturesFlowManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuturesFlowManager.h; sourceTree = "<group>"; };
-		C77BC3E91A817187004CB0A2 /* FuturesFlowManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuturesFlowManager.m; sourceTree = "<group>"; };
+		C77BC3E81A817187004CB0A2 /* ViewControllerFutureFactory+FutureCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewControllerFutureFactory+FutureCreator.h"; sourceTree = "<group>"; };
+		C77BC3E91A817187004CB0A2 /* ViewControllerFutureFactory+FutureCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewControllerFutureFactory+FutureCreator.m"; sourceTree = "<group>"; };
 		C77BC3EB1A81853B004CB0A2 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
 		C77BC3EC1A81853B004CB0A2 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
-		C77BC3EE1A8186E1004CB0A2 /* ViewControllerFlowManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerFlowManager.h; sourceTree = "<group>"; };
-		C77BC3EF1A8186E1004CB0A2 /* ViewControllerFlowManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerFlowManager.m; sourceTree = "<group>"; };
+		C77BC3EE1A8186E1004CB0A2 /* ViewControllerFutureFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerFutureFactory.h; sourceTree = "<group>"; };
+		C77BC3EF1A8186E1004CB0A2 /* ViewControllerFutureFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerFutureFactory.m; sourceTree = "<group>"; };
+		C77BC3F11A8195BB004CB0A2 /* FutureConstructor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FutureConstructor.h; sourceTree = "<group>"; };
 		F672DAF2D157197022B21F37 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,12 +154,13 @@
 		C771F8AD1A816E8500DEEA9A /* FlowMapper */ = {
 			isa = PBXGroup;
 			children = (
-				C771F8AE1A816E8500DEEA9A /* FlowMapper.h */,
-				C771F8AF1A816E8500DEEA9A /* FlowMapper.m */,
-				C77BC3E81A817187004CB0A2 /* FuturesFlowManager.h */,
-				C77BC3E91A817187004CB0A2 /* FuturesFlowManager.m */,
-				C77BC3EE1A8186E1004CB0A2 /* ViewControllerFlowManager.h */,
-				C77BC3EF1A8186E1004CB0A2 /* ViewControllerFlowManager.m */,
+				C77BC3F11A8195BB004CB0A2 /* FutureConstructor.h */,
+				C771F8AE1A816E8500DEEA9A /* ViewControllerFutureFactory+Mapper.h */,
+				C771F8AF1A816E8500DEEA9A /* ViewControllerFutureFactory+Mapper.m */,
+				C77BC3E81A817187004CB0A2 /* ViewControllerFutureFactory+FutureCreator.h */,
+				C77BC3E91A817187004CB0A2 /* ViewControllerFutureFactory+FutureCreator.m */,
+				C77BC3EE1A8186E1004CB0A2 /* ViewControllerFutureFactory.h */,
+				C77BC3EF1A8186E1004CB0A2 /* ViewControllerFutureFactory.m */,
 			);
 			path = FlowMapper;
 			sourceTree = "<group>";
@@ -309,9 +311,9 @@
 				B28DEBCF1A81470C00E6CBE5 /* ViewController.m in Sources */,
 				B28DEBCC1A81470C00E6CBE5 /* AppDelegate.m in Sources */,
 				B28DEBC91A81470C00E6CBE5 /* main.m in Sources */,
-				C771F8B01A816E8500DEEA9A /* FlowMapper.m in Sources */,
-				C77BC3EA1A817187004CB0A2 /* FuturesFlowManager.m in Sources */,
-				C77BC3F01A8186E1004CB0A2 /* ViewControllerFlowManager.m in Sources */,
+				C771F8B01A816E8500DEEA9A /* ViewControllerFutureFactory+Mapper.m in Sources */,
+				C77BC3EA1A817187004CB0A2 /* ViewControllerFutureFactory+FutureCreator.m in Sources */,
+				C77BC3F01A8186E1004CB0A2 /* ViewControllerFutureFactory.m in Sources */,
 				C77BC3ED1A81853B004CB0A2 /* ViewController2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

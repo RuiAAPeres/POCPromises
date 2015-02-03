@@ -6,12 +6,13 @@
 //  Copyright (c) 2015 Rui Peres. All rights reserved.
 //
 
-#import "FlowMapper.h"
+#import "ViewControllerFutureFactory+Mapper.h"
+#import "ViewControllerFutureFactory+FutureCreator.h"
+#import "FutureConstructor.h"
 
 #import <objc/runtime.h>
 
 #import "JEFuture.h"
-#import "FuturesFlowManager.h"
 
 @implementation UIViewController (Future)
 
@@ -25,7 +26,7 @@
 
 @end
 
-@implementation FlowMapper
+@implementation ViewControllerFutureFactory (Mapper)
 
 static NSMutableDictionary *mapping;
 
@@ -45,7 +46,7 @@ static NSMutableDictionary *mapping;
 
 + (void)assertFutureSelector:(SEL)futureSelector
 {
-    NSParameterAssert([[FuturesFlowManager class] respondsToSelector:futureSelector]);
+    NSParameterAssert([[ViewControllerFutureFactory class] respondsToSelector:futureSelector]);
 }
 
 #pragma mark - Public API
@@ -69,7 +70,7 @@ static NSMutableDictionary *mapping;
     [self assertMap:mapping withKey:NSStringFromClass(class)];
     
     SEL futureSelector = [mapping[NSStringFromClass(class)] pointerValue];
-    JEFuture *future = [[FuturesFlowManager class] performSelector:futureSelector];
+    JEFuture *future = [[ViewControllerFutureFactory class] performSelector:futureSelector];
     
     return [[class alloc] initWithFuture:future];
 }

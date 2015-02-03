@@ -6,16 +6,9 @@
 //  Copyright (c) 2015 Rui Peres. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
+#import "ViewControllerFutureFactory.h"
 #import "JEFuture.h"
-
-@protocol FutureContructor <NSObject>
-
-- (instancetype)initWithFuture:(JEFuture *)future;
-
-@end
 
 @interface UIViewController (Future)
 
@@ -23,7 +16,7 @@
 
 @end
 
-@interface FlowMapper : NSObject
+@interface ViewControllerFutureFactory (Mapper)
 
 + (void)setClass:(Class)class withFutureSelector:(SEL)selector;
 + (UIViewController<FutureContructor> *)instanceWithFutureFromClass:(Class)class;

@@ -8,8 +8,8 @@
 
 #import "ViewController.h"
 
-#import "FlowMapper.h"
-#import "ViewControllerFlowManager.h"
+
+#import "ViewControllerFutureFactory.h"
 
 @interface ViewController ()
 @end
@@ -23,7 +23,7 @@
 
 - (IBAction)pushStuff:(id)sender
 {
-    UIViewController<FutureContructor> *vc = [FlowMapper instanceWithFutureFromClass:[ViewControllerFlowManager viewControllerFromMapping:ViewControllerForSpecialEffectsMapping]];
+    UIViewController<FutureContructor> *vc = [ViewControllerFutureFactory viewControllerFromMapping:ViewControllerForSpecialEffectsMapping];
     
     [self.navigationController pushViewController:vc animated:YES];
 }
