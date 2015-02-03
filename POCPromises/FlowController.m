@@ -30,6 +30,13 @@ static NSMutableDictionary *mapping;
 
 #pragma mark - Asserts
 
++ (void)assertMap:(NSDictionary *)mapping withKey:(NSString *)key
+{
+    NSParameterAssert(key);
+    NSParameterAssert(mapping);
+    NSAssert(mapping[key], @"It should be set");
+}
+
 + (void)assertInstance:(id)instance
 {
     NSParameterAssert([instance conformsToProtocol:@protocol(FutureContructor)]);
@@ -55,9 +62,12 @@ static NSMutableDictionary *mapping;
     [mapping setObject:future forKey:NSStringFromClass(class)];
 }
 
-+ (void)instanceWithFuturesWithClass:(Class)class
++ (id <FutureContructor>)instanceWithFuturesWithClass:(Class)class
 {
-    return [[class alloc] initWithFuture:mapping[[NSStringFromClass(class)]];
+    [self assertInstance:[class new]];
+    [self assertMap:mapping withKey:NSStringFromClass(class)];
+    
+    return [[class alloc] initWithFuture:mapping[NSStringFromClass(class)]];
 }
 
 @end
