@@ -17,14 +17,15 @@
 
 @end
 
-@interface UIViewController (Future) <FutureContructor>
+@interface UIViewController (Future)
 
 @property(nonatomic,strong)JEFuture *future;
 
 @end
 
-@interface FlowController : NSObject
+@interface FlowMapper : NSObject
 
-+ (void)setClass:(Class)class withFuture:(JEFuture *)future;
++ (void)setClass:(Class)class withFutureSelector:(SEL)selector;
++ (UIViewController<FutureContructor> *)instanceWithFuturesWithClass:(Class)class;
 
 @end

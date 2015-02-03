@@ -6,13 +6,14 @@
 //  Copyright (c) 2015 Rui Peres. All rights reserved.
 //
 
-#import "FlowController.h"
-#import "JEFuture.h"
+#import "FlowMapper.h"
+
 #import <objc/runtime.h>
 
-@implementation UIViewController (Future)
+#import "JEFuture.h"
+#import "FuturesFlowManager.h"
 
-@dynamic future;
+@implementation UIViewController (Future)
 
 - (void)setFuture:(id)object {
     objc_setAssociatedObject(self, @selector(future), object, OBJC_ASSOCIATION_RETAIN);
@@ -24,7 +25,7 @@
 
 @end
 
-@implementation FlowController
+@implementation FlowMapper
 
 static NSMutableDictionary *mapping;
 
@@ -42,24 +43,24 @@ static NSMutableDictionary *mapping;
     NSParameterAssert([instance conformsToProtocol:@protocol(FutureContructor)]);
 }
 
-+ (void)assertFuture:(JEFuture *)future
++ (void)assertFutureSelector:(SEL)futureSelector
 {
-    NSParameterAssert([future isKindOfClass:[JEFuture class]]);
+    NSParameterAssert([[FuturesFlowManager class] respondsToSelector:futureSelector]);
 }
 
 #pragma mark - Public API
 
-+ (void)setClass:(Class)class withFuture:(JEFuture *)future
++ (void)setClass:(Class)class withFutureSelector:(SEL)selector
 {
     [self assertInstance:[class new]];
-    [self assertFuture:future];
+    [self assertFutureSelector:selector];
     
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         mapping = [[NSMutableDictionary alloc] init];
     });
     
-    [mapping setObject:future forKey:NSStringFromClass(class)];
+    [mapping setObject:[NSValue valueWithPointer:selector] forKey:NSStringFromClass(class)];
 }
 
 + (id <FutureContructor>)instanceWithFuturesWithClass:(Class)class
@@ -67,7 +68,10 @@ static NSMutableDictionary *mapping;
     [self assertInstance:[class new]];
     [self assertMap:mapping withKey:NSStringFromClass(class)];
     
-    return [[class alloc] initWithFuture:mapping[NSStringFromClass(class)]];
+    SEL futureSelector = [mapping[NSStringFromClass(class)] pointerValue];
+    JEFuture *future = [[FuturesFlowManager class] performSelector:futureSelector];
+    
+    return [[class alloc] initWithFuture:future];
 }
 
 @end

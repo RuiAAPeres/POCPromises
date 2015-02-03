@@ -8,14 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		8B2DAEF15B62A995D8E891E8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2FCB00F789BA9ECFBE3D29 /* libPods.a */; };
-		B20CF38D1A81493E00A7597D /* FlowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B20CF38C1A81493E00A7597D /* FlowController.m */; };
 		B28DEBC91A81470C00E6CBE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B28DEBC81A81470C00E6CBE5 /* main.m */; };
 		B28DEBCC1A81470C00E6CBE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B28DEBCB1A81470C00E6CBE5 /* AppDelegate.m */; };
 		B28DEBCF1A81470C00E6CBE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B28DEBCE1A81470C00E6CBE5 /* ViewController.m */; };
-		B28DEBD21A81470C00E6CBE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B28DEBD01A81470C00E6CBE5 /* Main.storyboard */; };
 		B28DEBD41A81470C00E6CBE5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B28DEBD31A81470C00E6CBE5 /* Images.xcassets */; };
-		B28DEBD71A81470C00E6CBE5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B28DEBD51A81470C00E6CBE5 /* LaunchScreen.xib */; };
 		B28DEBE31A81470C00E6CBE5 /* POCPromisesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B28DEBE21A81470C00E6CBE5 /* POCPromisesTests.m */; };
+		C771F8B01A816E8500DEEA9A /* FlowMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C771F8AF1A816E8500DEEA9A /* FlowMapper.m */; };
+		C771F8B41A816F2D00DEEA9A /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C771F8B31A816F2D00DEEA9A /* ViewController.xib */; };
+		C771F8B61A816FDB00DEEA9A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C771F8B51A816FDB00DEEA9A /* MainStoryboard.storyboard */; };
+		C77BC3EA1A817187004CB0A2 /* FuturesFlowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C77BC3E91A817187004CB0A2 /* FuturesFlowManager.m */; };
+		C77BC3ED1A81853B004CB0A2 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = C77BC3EC1A81853B004CB0A2 /* ViewController2.m */; };
+		C77BC3F01A8186E1004CB0A2 /* ViewControllerFlowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C77BC3EF1A8186E1004CB0A2 /* ViewControllerFlowManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +34,6 @@
 /* Begin PBXFileReference section */
 		5B317E65C7D08C356B4F9AAF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		AE2FCB00F789BA9ECFBE3D29 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B20CF38B1A81493E00A7597D /* FlowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowController.h; sourceTree = "<group>"; };
-		B20CF38C1A81493E00A7597D /* FlowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowController.m; sourceTree = "<group>"; };
 		B28DEBC31A81470C00E6CBE5 /* POCPromises.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POCPromises.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28DEBC71A81470C00E6CBE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B28DEBC81A81470C00E6CBE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,12 +41,20 @@
 		B28DEBCB1A81470C00E6CBE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B28DEBCD1A81470C00E6CBE5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B28DEBCE1A81470C00E6CBE5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B28DEBD11A81470C00E6CBE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B28DEBD31A81470C00E6CBE5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B28DEBD61A81470C00E6CBE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B28DEBDC1A81470C00E6CBE5 /* POCPromisesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = POCPromisesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28DEBE11A81470C00E6CBE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B28DEBE21A81470C00E6CBE5 /* POCPromisesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POCPromisesTests.m; sourceTree = "<group>"; };
+		C771F8AE1A816E8500DEEA9A /* FlowMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowMapper.h; sourceTree = "<group>"; };
+		C771F8AF1A816E8500DEEA9A /* FlowMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowMapper.m; sourceTree = "<group>"; };
+		C771F8B31A816F2D00DEEA9A /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		C771F8B51A816FDB00DEEA9A /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		C77BC3E81A817187004CB0A2 /* FuturesFlowManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuturesFlowManager.h; sourceTree = "<group>"; };
+		C77BC3E91A817187004CB0A2 /* FuturesFlowManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuturesFlowManager.m; sourceTree = "<group>"; };
+		C77BC3EB1A81853B004CB0A2 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		C77BC3EC1A81853B004CB0A2 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		C77BC3EE1A8186E1004CB0A2 /* ViewControllerFlowManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerFlowManager.h; sourceTree = "<group>"; };
+		C77BC3EF1A8186E1004CB0A2 /* ViewControllerFlowManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerFlowManager.m; sourceTree = "<group>"; };
 		F672DAF2D157197022B21F37 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,15 +109,16 @@
 		B28DEBC51A81470C00E6CBE5 /* POCPromises */ = {
 			isa = PBXGroup;
 			children = (
-				B20CF38B1A81493E00A7597D /* FlowController.h */,
-				B20CF38C1A81493E00A7597D /* FlowController.m */,
+				C771F8AD1A816E8500DEEA9A /* FlowMapper */,
 				B28DEBCA1A81470C00E6CBE5 /* AppDelegate.h */,
 				B28DEBCB1A81470C00E6CBE5 /* AppDelegate.m */,
 				B28DEBCD1A81470C00E6CBE5 /* ViewController.h */,
 				B28DEBCE1A81470C00E6CBE5 /* ViewController.m */,
-				B28DEBD01A81470C00E6CBE5 /* Main.storyboard */,
+				C77BC3EB1A81853B004CB0A2 /* ViewController2.h */,
+				C77BC3EC1A81853B004CB0A2 /* ViewController2.m */,
+				C771F8B31A816F2D00DEEA9A /* ViewController.xib */,
+				C771F8B51A816FDB00DEEA9A /* MainStoryboard.storyboard */,
 				B28DEBD31A81470C00E6CBE5 /* Images.xcassets */,
-				B28DEBD51A81470C00E6CBE5 /* LaunchScreen.xib */,
 				B28DEBC61A81470C00E6CBE5 /* Supporting Files */,
 			);
 			path = POCPromises;
@@ -138,6 +148,19 @@
 				B28DEBE11A81470C00E6CBE5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C771F8AD1A816E8500DEEA9A /* FlowMapper */ = {
+			isa = PBXGroup;
+			children = (
+				C771F8AE1A816E8500DEEA9A /* FlowMapper.h */,
+				C771F8AF1A816E8500DEEA9A /* FlowMapper.m */,
+				C77BC3E81A817187004CB0A2 /* FuturesFlowManager.h */,
+				C77BC3E91A817187004CB0A2 /* FuturesFlowManager.m */,
+				C77BC3EE1A8186E1004CB0A2 /* ViewControllerFlowManager.h */,
+				C77BC3EF1A8186E1004CB0A2 /* ViewControllerFlowManager.m */,
+			);
+			path = FlowMapper;
 			sourceTree = "<group>";
 		};
 		F0A189F8E2F652950263C7C8 /* Frameworks */ = {
@@ -230,8 +253,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B28DEBD21A81470C00E6CBE5 /* Main.storyboard in Resources */,
-				B28DEBD71A81470C00E6CBE5 /* LaunchScreen.xib in Resources */,
+				C771F8B61A816FDB00DEEA9A /* MainStoryboard.storyboard in Resources */,
+				C771F8B41A816F2D00DEEA9A /* ViewController.xib in Resources */,
 				B28DEBD41A81470C00E6CBE5 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +309,10 @@
 				B28DEBCF1A81470C00E6CBE5 /* ViewController.m in Sources */,
 				B28DEBCC1A81470C00E6CBE5 /* AppDelegate.m in Sources */,
 				B28DEBC91A81470C00E6CBE5 /* main.m in Sources */,
-				B20CF38D1A81493E00A7597D /* FlowController.m in Sources */,
+				C771F8B01A816E8500DEEA9A /* FlowMapper.m in Sources */,
+				C77BC3EA1A817187004CB0A2 /* FuturesFlowManager.m in Sources */,
+				C77BC3F01A8186E1004CB0A2 /* ViewControllerFlowManager.m in Sources */,
+				C77BC3ED1A81853B004CB0A2 /* ViewController2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,25 +333,6 @@
 			targetProxy = B28DEBDD1A81470C00E6CBE5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		B28DEBD01A81470C00E6CBE5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B28DEBD11A81470C00E6CBE5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B28DEBD51A81470C00E6CBE5 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B28DEBD61A81470C00E6CBE5 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B28DEBE41A81470C00E6CBE5 /* Debug */ = {
