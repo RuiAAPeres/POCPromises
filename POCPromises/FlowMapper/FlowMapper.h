@@ -26,6 +26,6 @@
 @interface FlowMapper : NSObject
 
 + (void)setClass:(Class)class withFutureSelector:(SEL)selector;
-+ (UIViewController<FutureContructor> *)instanceWithFuturesWithClass:(Class)class;
++ (UIViewController<FutureContructor> *)instanceWithFutureFromClass:(Class)class;
 
 @end

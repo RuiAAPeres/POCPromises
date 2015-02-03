@@ -63,7 +63,7 @@ static NSMutableDictionary *mapping;
     [mapping setObject:[NSValue valueWithPointer:selector] forKey:NSStringFromClass(class)];
 }
 
-+ (id <FutureContructor>)instanceWithFuturesWithClass:(Class)class
++ (id <FutureContructor>)instanceWithFutureFromClass:(Class)class
 {
     [self assertInstance:[class new]];
     [self assertMap:mapping withKey:NSStringFromClass(class)];

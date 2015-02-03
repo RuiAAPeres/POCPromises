@@ -23,7 +23,7 @@
 
 - (IBAction)pushStuff:(id)sender
 {
-    UIViewController<FutureContructor> *vc = [FlowMapper instanceWithFuturesWithClass:[ViewControllerFlowManager viewControllerFromMapping:ViewControllerForSpecialEffectsMapping]];
+    UIViewController<FutureContructor> *vc = [FlowMapper instanceWithFutureFromClass:[ViewControllerFlowManager viewControllerFromMapping:ViewControllerForSpecialEffectsMapping]];
     
     [self.navigationController pushViewController:vc animated:YES];
 }
